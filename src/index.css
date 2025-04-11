@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  /*=============================================
+  =            Font Family            =
+  =============================================*/
+
+  --font-raleway: 'Raleway', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+
+  /*=====  End of Font Family  ======*/
+
+  /*=============================================
+=            Colors            =
+=============================================*/
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-body-dark: #121212;
+  --color-heading-dark: #1e1e1e;
+  --color-border-dark: #2d2d2d;
+  --color-body-dark: #f5f5f5;
+  --color-heading-dark: #e0e0e0;
+  --color-border-dark: #d1d1d1;
+  --color-hover-dark: #252525;
+  --color-hover-dark: #fafafa;
+
+  --color-primary: #1976d2;
+  --color-primary-dark: #82b1ff;
+
+  --color-secondary: #303f9f;
+  --color-secondary-dark: #9fa8da;
+
+  --color-info: #7b1fa2;
+  --color-info-dark: #ce93d8;
+
+  --color-success: #2e7d32;
+  --color-success-dark: #80e27e;
+
+  --color-warning: #fbc02d;
+  --color-warning-dark: #fff59d;
+
+  --color-danger: #d32f2f;
+  --color-danger-dark: #ff8088;
+
+  --color-highdark: #c2185b;
+  --color-highdark-dark: #ff8fa3;
+
+  --color-accent: #ef6c00;
+  --color-accent-dark: #ffcc80;
+
+  --color-disable: #616161;
+  --color-disable-dark: #bdbdbd;
+
+  /*=====  End of Colors  ======*/
+
+  /*=============================================
+ =            Font sizes            =
+ =============================================*/
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+
+  --text-h1: 2.5rem;
+  --text-h2: 2rem;
+  --text-h3: 1.75rem;
+  --text-h4: 1.5rem;
+  --text-h5: 1.25rem;
+  --text-h6: 1rem;
+
+  /*=====  End of Font sizes  ======*/
+
+  /*=============================================
+ =            Border Radius            =
+ =============================================*/
+
+  --radius-xs: 0.125rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /*=====  End of Border Radius  ======*/
+
+  /*=============================================
+=            Breakpoints            =
+=============================================*/
+
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1440px;
+
+  /*=====  End of Breakpoints  ======*/
+
+  /*=============================================
+=            Shadow            =
+=============================================*/
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
+
+  /*=====  End of Shadow  ======*/
+
+  /*=============================================
+=            Line Hight            =
+=============================================*/
+
+  --leading-xs: 1.2;
+  --leading-sm: 1.4;
+  --leading-base: 1.6;
+  --leading-lg: 1.8;
+  --leading-xl: 2;
+
+  /*=====  End of Line Hight  ======*/
+
+  /*=============================================
+=            Z-index            =
+=============================================*/
+
+  --z-index-base: 1;
+  --z-index-dropdown: 1000;
+  --z-index-modal: 2000;
+  --z-index-popover: 3000;
+  --z-index-tooltip: 4000;
+  --z-index-toast: 5000;
+
+  /*=====  End of Z-index  ======*/
+
+  /*=============================================
+ =            Icon Sizes            =
+ =============================================*/
+
+  --icon-size-xs: 0.75rem;
+  --icon-size-sm: 1rem;
+  --icon-size-md: 1.5rem;
+  --icon-size-lg: 2rem;
+  --icon-size-xl: 2.5rem;
+
+  /*=====  End of Icon Sizes  ======*/
+}
+
+/*=============================================
+=            Utilities            =
+=============================================*/
+
+/*=============================================
+=            Icons            =
+=============================================*/
+
+@utility icon-* {
+  width: --value(--icon-size- *);
+  height: --value(--icon-size- *);
+}
+
+/*=====  End of Icons  ======*/
+
+/*=====  End of Utilities  ======*/
