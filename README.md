@@ -1,12 +1,34 @@
-# React + Vite
+# React Project Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional React starter with Vite, ESLint, Prettier, and Storybook configured for JavaScript development.
 
-Currently, two official plugins are available:
+![Project Screenshot](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Code format, structure and dev tools
 
-## Expanding the ESLint configuration
+- ⚡️ **Vite** - Next generation frontend tooling
+- ⚛️ **React 18** - With latest features
+- ✨ **ESLint** - Code quality and consistency
+- 💅 **Prettier** - Code formatting
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## UI development, testing, and documentation tools
+
+- 🎨 **Storybook** - UI component development environment
+
+## Getting Started
+
+- 🛠 **Production-ready** - Optimized build configuration
+- 📦 **Component library** - With Storybook
+
+### Prerequisites
+
+- Node.js 18+
+- npm 9+ or yarn 1.22+
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   ```
