@@ -73,7 +73,7 @@ function Example() {
 }
 ```
 
-## Button Component Props
+### Button Props
 
 | Prop           | Type        | Default   | Description                                                                                               |
 | -------------- | ----------- | --------- | --------------------------------------------------------------------------------------------------------- |
@@ -85,6 +85,8 @@ function Example() {
 | `onClick`      | `function`  | -         | Click handler function `(event) => void`                                                                  |
 | `disabled`     | `boolean`   | `false`   | Disables the button and applies disabled styling                                                          |
 | `loading`      | `boolean`   | `false`   | Shows a loading spinner and disables interaction                                                          |
+
+## Checkbox
 
 ### Usage Example
 
@@ -106,7 +108,7 @@ function Example() {
 }
 ```
 
-## Checkbox Component Props
+### Checkbox Props
 
 | Prop       | Type       | Default   | Description                                                                                                 |
 | ---------- | ---------- | --------- | ----------------------------------------------------------------------------------------------------------- |
@@ -117,6 +119,8 @@ function Example() {
 | `onChange` | `function` | -         | Change handler: `(event: React.ChangeEvent<HTMLInputElement>) => void`                                      |
 | `disabled` | `boolean`  | `false`   | Disables the checkbox interaction                                                                           |
 | `loading`  | `boolean`  | `false`   | Shows a loading spinner (disables interaction)                                                              |
+
+## Switch
 
 ### Usage Example
 
@@ -141,7 +145,7 @@ function Example() {
 }
 ```
 
-## Switch Component Props
+### Switch Props
 
 | Prop       | Type        | Default                                      | Description                                                                                               |
 | ---------- | ----------- | -------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -154,6 +158,8 @@ function Example() {
 | `loading`  | `boolean`   | `false`                                      | Shows a loading spinner (disables interaction)                                                            |
 | `onIcon`   | `ReactNode` | `<CheckIcon className="text-primary-600" />` | Icon displayed when switch is on                                                                          |
 | `offIcon`  | `ReactNode` | `<XMarkIcon className="text-gray-400" />`    | Icon displayed when switch is off                                                                         |
+
+## Bookmark
 
 ### Usage Example
 
@@ -175,7 +181,7 @@ function Example() {
 }
 ```
 
-## Bookmark Component Props
+### Bookmark Props
 
 | Prop       | Type       | Default   | Description                                                                                                 |
 | ---------- | ---------- | --------- | ----------------------------------------------------------------------------------------------------------- |
