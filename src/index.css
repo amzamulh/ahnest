@@ -19,37 +19,36 @@
   --color-body-dark: #121212;
   --color-heading-dark: #1e1e1e;
   --color-border-dark: #2d2d2d;
-  --color-body-dark: #f5f5f5;
-  --color-heading-dark: #e0e0e0;
-  --color-border-dark: #d1d1d1;
+  --color-body-light: #f5f5f5;
+  --color-heading-light: #e0e0e0;
+  --color-border-light: #d1d1d1;
   --color-hover-dark: #252525;
-  --color-hover-dark: #fafafa;
+  --color-hover-light: #fafafa;
 
-  --color-primary: #1976d2;
-  --color-primary-dark: #82b1ff;
+  --color-primary: #3160bb;
+  --color-primary-dark: #01579b;
 
-  --color-secondary: #303f9f;
-  --color-secondary-dark: #9fa8da;
+  --color-secondary: #80deea;
+  --color-secondary-dark: #70d4dc;
 
-  --color-info: #7b1fa2;
-  --color-info-dark: #ce93d8;
+  --color-info: #38adc6;
+  --color-info-dark: #30a0b4;
 
-  --color-success: #2e7d32;
-  --color-success-dark: #80e27e;
+  --color-success: #30b060;
+  --color-success-dark: #187038;
 
   --color-warning: #fbc02d;
-  --color-warning-dark: #fff59d;
+  --color-warning-dark: #d0a420;
 
-  --color-danger: #d32f2f;
-  --color-danger-dark: #ff8088;
+  --color-danger: #cc3828;
+  --color-danger-dark: #a43020;
 
-  --color-highdark: #c2185b;
-  --color-highdark-dark: #ff8fa3;
+  --color-highdark: #fdd835;
 
   --color-accent: #ef6c00;
   --color-accent-dark: #ffcc80;
 
-  --color-disable: #616161;
+  --color-disable: #6c757d;
   --color-disable-dark: #bdbdbd;
 
   /*=====  End of Colors  ======*/
@@ -138,11 +137,11 @@
  =            Icon Sizes            =
  =============================================*/
 
-  --icon-size-xs: 0.75rem;
+  --icon-size-xs: 0.875rem;
   --icon-size-sm: 1rem;
-  --icon-size-md: 1.5rem;
-  --icon-size-lg: 2rem;
-  --icon-size-xl: 2.5rem;
+  --icon-size-md: 1.25rem;
+  --icon-size-lg: 1.5rem;
+  --icon-size-xl: 2rem;
 
   /*=====  End of Icon Sizes  ======*/
 }

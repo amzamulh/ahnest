@@ -1,5 +1,6 @@
+// src/components/Button/Button.stories.jsx
 import Button from './Button';
-import { fn } from '@storybook/test';
+import { SparklesIcon } from '@heroicons/react/24/solid';
 
 export default {
   title: 'Components/Button',
@@ -7,53 +8,128 @@ export default {
   parameters: {
     layout: 'centered',
   },
-  tags: ['autodocs'],
-
   argTypes: {
     variant: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary', 'danger'],
+      control: 'select',
+      options: [
+        'base',
+        'primary',
+        'secondary',
+        'info',
+        'success',
+        'warning',
+        'danger',
+        'disabled',
+      ],
     },
     size: {
-      control: { type: 'radio' },
-      options: ['small', 'medium', 'large'],
+      control: 'select',
+      options: ['xs', 'sm', 'md', 'lg', 'xl'],
     },
-    onClick: { action: 'clicked' },
+    label: { control: 'text' },
+    iconPosition: { control: 'inline-radio', options: ['left', 'right'] },
+    radius: {
+      control: 'select',
+      options: ['xs', 'sm', 'md', 'lg', 'xl', 'full'],
+    },
     disabled: { control: 'boolean' },
+    onClick: { action: 'clicked' },
   },
-  args: { onClick: fn() },
+  tags: ['autodocs'],
+};
+export const Base = {
+  args: {
+    variant: 'base',
+    label: 'Based',
+    size: 'md',
+  },
 };
 
-const Template = (args) => <Button {...args}>Button</Button>;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  variant: 'primary',
+export const Primary = {
+  args: {
+    variant: 'primary',
+    size: 'md',
+    label: 'Primary Button',
+  },
 };
 
-export const Secondary = Template.bind({});
-Secondary.args = {
-  variant: 'secondary',
+export const Secondary = {
+  args: {
+    variant: 'secondary',
+    size: 'md',
+    label: 'Secondary Button',
+  },
 };
 
-export const Danger = Template.bind({});
-Danger.args = {
-  variant: 'danger',
-};
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-};
-export const Medium = Template.bind({});
-Medium.args = {
-  size: 'medium',
-};
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
+export const Info = {
+  args: {
+    variant: 'info',
+    size: 'md',
+    label: 'Info Button',
+  },
 };
 
-export const Disabled = Template.bind({});
-Disabled.args = {
-  disabled: true,
+export const Success = {
+  args: {
+    variant: 'success',
+    size: 'md',
+    label: 'Success Button',
+  },
+};
+
+export const Warning = {
+  args: {
+    variant: 'warning',
+    size: 'md',
+    label: 'Warning Button',
+  },
+};
+
+export const Danger = {
+  args: {
+    variant: 'danger',
+    size: 'md',
+    label: 'Danger Button',
+  },
+};
+
+export const Disabled = {
+  args: {
+    variant: 'primary',
+    size: 'md',
+    label: 'Disabled Button',
+    disabled: true,
+  },
+};
+
+export const WithIconLeft = {
+  args: {
+    variant: 'success',
+    size: 'md',
+    label: 'Button',
+    icon: <SparklesIcon />,
+    iconPosition: 'left',
+  },
+};
+
+export const WithIconRight = {
+  args: {
+    variant: 'secondary',
+    size: 'md',
+    label: 'Button',
+    icon: <SparklesIcon />,
+    iconPosition: 'right',
+  },
+};
+
+export const Sizes = {
+  render: () => (
+    <div className="space-x-4">
+      <Button variant="primary" size="xl" label="Button" />
+      <Button variant="secondary" size="lg" label="Button" />
+      <Button variant="info" size="md" label="Button" />
+      <Button variant="success" size="sm" label="Button" />
+      <Button variant="danger" size="xs" label="Button" />
+    </div>
+  ),
 };
