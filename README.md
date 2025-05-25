@@ -1,6 +1,6 @@
-# React Project Starter
+# Ahnest Project Starter with react
 
-A professional React starter with Vite, ESLint, Prettier, and Storybook configured for JavaScript development.
+A professional ahnest project with React starter with Vite, ESLint, Prettier, and Storybook configured for JavaScript development.
 
 ![Project Screenshot](screenshot.png)
 
@@ -110,15 +110,16 @@ function Example() {
 
 ### Checkbox Props
 
-| Prop       | Type       | Default   | Description                                                                                                 |
-| ---------- | ---------- | --------- | ----------------------------------------------------------------------------------------------------------- |
-| `variant`  | `string`   | `primary` | Checkbox style variant. Options: `primary`, `secondary`, `info`, `success`, `warning`, `danger`, `disabled` |
-| `size`     | `string`   | `md`      | Checkbox size. Options: `xs`, `sm`, `md`, `lg`, `xl`                                                        |
-| `label`    | `string`   | -         | Optional text label displayed next to checkbox                                                              |
-| `checked`  | `boolean`  | `false`   | Controlled checked state of the checkbox                                                                    |
-| `onChange` | `function` | -         | Change handler: `(event: React.ChangeEvent<HTMLInputElement>) => void`                                      |
-| `disabled` | `boolean`  | `false`   | Disables the checkbox interaction                                                                           |
-| `loading`  | `boolean`  | `false`   | Shows a loading spinner (disables interaction)                                                              |
+| Prop            | Type       | Default   | Description                                                                                                 |
+| --------------- | ---------- | --------- | ----------------------------------------------------------------------------------------------------------- |
+| `variant`       | `string`   | `primary` | Checkbox style variant. Options: `primary`, `secondary`, `info`, `success`, `warning`, `danger`, `disabled` |
+| `size`          | `string`   | `md`      | Checkbox size. Options: `xs`, `sm`, `md`, `lg`, `xl`                                                        |
+| `label`         | `string`   | -         | Optional text label displayed next to checkbox                                                              |
+| `labelPosition` | `string`   | `left`    | Label placement relative to checkbox. Options: `left`, `right`                                              |
+| `checked`       | `boolean`  | `false`   | Controlled checked state of the checkbox                                                                    |
+| `onChange`      | `function` | -         | Change handler: `(event: React.ChangeEvent<HTMLInputElement>) => void`                                      |
+| `disabled`      | `boolean`  | `false`   | Disables the checkbox interaction                                                                           |
+| `loading`       | `boolean`  | `false`   | Shows a loading spinner (disables interaction)                                                              |
 
 ## Switch
 
@@ -183,12 +184,13 @@ function Example() {
 
 ### Bookmark Props
 
-| Prop       | Type       | Default   | Description                                                                                                 |
-| ---------- | ---------- | --------- | ----------------------------------------------------------------------------------------------------------- |
-| `variant`  | `string`   | `primary` | Bookmark style variant. Options: `primary`, `secondary`, `info`, `success`, `warning`, `danger`, `disabled` |
-| `size`     | `string`   | `md`      | Bookmark size. Options: `xs`, `sm`, `md`, `lg`, `xl`                                                        |
-| `label`    | `string`   | -         | Optional text displayed next to bookmark icon                                                               |
-| `active`   | `boolean`  | `false`   | Bookmark state (filled/active when true)                                                                    |
-| `onToggle` | `function` | -         | Toggle handler: `(active: boolean) => void`                                                                 |
-| `disabled` | `boolean`  | `false`   | Disables interaction with the bookmark                                                                      |
-| `loading`  | `boolean`  | `false`   | Shows a loading spinner (disables interaction)                                                              |
+| Prop            | Type       | Default   | Description                                                                                                 |
+| --------------- | ---------- | --------- | ----------------------------------------------------------------------------------------------------------- |
+| `variant`       | `string`   | `primary` | Bookmark style variant. Options: `primary`, `secondary`, `info`, `success`, `warning`, `danger`, `disabled` |
+| `size`          | `string`   | `md`      | Bookmark size. Options: `xs`, `sm`, `md`, `lg`, `xl`                                                        |
+| `label`         | `string`   | -         | Optional text displayed next to bookmark icon                                                               |
+| `labelPosition` | `string`   | `left`    | Label placement relative to Icon. Options: `left`, `right`                                                  |
+| `active`        | `boolean`  | `false`   | Bookmark state (filled/active when true)                                                                    |
+| `onToggle`      | `function` | -         | Toggle handler: `(active: boolean) => void`                                                                 |
+| `disabled`      | `boolean`  | `false`   | Disables interaction with the bookmark                                                                      |
+| `loading`       | `boolean`  | `false`   | Shows a loading spinner (disables interaction)                                                              |

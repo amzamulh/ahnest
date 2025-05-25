@@ -17,11 +17,11 @@
   --color-white: #ffffff;
   --color-black: #000000;
   --color-body-dark: #121212;
-  --color-heading-dark: #1e1e1e;
+  --color-heading-dark: #181818;
   --color-border-dark: #2d2d2d;
   --color-body-light: #f5f5f5;
-  --color-heading-light: #e0e0e0;
-  --color-border-light: #d1d1d1;
+  --color-heading-light: #e5e5e5;
+  --color-border-light: #d2d2d2;
   --color-hover-dark: #252525;
   --color-hover-light: #fafafa;
 
@@ -60,8 +60,9 @@
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.5rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-xxl: 1.5rem;
 
   --text-h1: 2.5rem;
   --text-h2: 2rem;
@@ -112,9 +113,9 @@
 =            Line Hight            =
 =============================================*/
 
-  --leading-xs: 1.2;
-  --leading-sm: 1.4;
-  --leading-base: 1.6;
+  --leading-xs: 1;
+  --leading-sm: 1.2;
+  --leading-base: 1.5;
   --leading-lg: 1.8;
   --leading-xl: 2;
 
