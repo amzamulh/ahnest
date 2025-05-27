@@ -39,7 +39,18 @@ export default {
     },
     size: {
       control: 'select',
-      options: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
+      options: [
+        'xs',
+        'sm',
+        'base',
+        'lg',
+        'xl',
+        'xxl',
+        'max',
+        'max2',
+        'max3',
+        'max4',
+      ],
     },
     fontWeight: {
       control: 'select',
