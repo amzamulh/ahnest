@@ -7,6 +7,7 @@
  */
 
 export const getValidStyle = (key, object, type = 'style') => {
+  if (!key) return '';
   if (!object || typeof object !== 'object') {
     console.warn(`Invalid ${type} object provided.`);
     return '';

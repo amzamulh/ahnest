@@ -5,6 +5,8 @@ import Header from '../components/layouts/Header';
 import MainContent from '../components/layouts/MainContent';
 import Footer from '../components/layouts/Footer';
 import Text from '../components/text/Text';
+import Icon from '../components/icons/Icon';
+import { HomeIcon } from '@heroicons/react/24/solid';
 
 const Main = () => {
   return (
@@ -13,6 +15,7 @@ const Main = () => {
         <Text textType={'span'} size="base">
           Sidebar
         </Text>
+        <Icon iconName={<HomeIcon />} />
       </Aside>
       <Layout className="h-screen w-screen overflow-y-auto">
         <Header>Header</Header>

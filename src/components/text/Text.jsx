@@ -26,8 +26,8 @@ const ElementMap = {
 const Text = ({
   textType = 'p',
   className = '',
-  variantText = 'base',
-  size = 'md',
+  variant = 'base',
+  size,
   fontWeight = 'normal',
   lineHeight = 'base',
   children,
@@ -38,11 +38,7 @@ const Text = ({
     textLineHeigthStyle,
     'Line Height',
   );
-  const validVariantText = getValidStyle(
-    variantText,
-    variantTextStyles,
-    'Color',
-  );
+  const validVariantText = getValidStyle(variant, variantTextStyles, 'Color');
   const validTestSize = getValidStyle(size, textStyles, 'Text Size');
   const validFontWeight = getValidStyle(
     fontWeight,
@@ -73,7 +69,7 @@ const Text = ({
 Text.propTypes = {
   textType: PropTypes.oneOf(Object.keys(ElementMap)),
   className: PropTypes.string,
-  variantText: PropTypes.oneOf(Object.keys(variantTextStyles)),
+  variant: PropTypes.oneOf(Object.keys(variantTextStyles)),
   size: PropTypes.oneOf(Object.keys(textLineHeigthStyle)),
   fontWeight: PropTypes.oneOf(Object.keys(fontWeightStyle)),
   children: PropTypes.node,
