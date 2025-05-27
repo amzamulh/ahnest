@@ -4,12 +4,15 @@ import Aside from '../components/layouts/Aside';
 import Header from '../components/layouts/Header';
 import MainContent from '../components/layouts/MainContent';
 import Footer from '../components/layouts/Footer';
+import Text from '../components/text/Text';
 
 const Main = () => {
   return (
     <Layout hasSider={true}>
       <Aside className="h-screen w-64 overflow-x-hidden overflow-y-auto bg-gray-300">
-        Sidebar
+        <Text textType={'span'} size="base">
+          Sidebar
+        </Text>
       </Aside>
       <Layout className="h-screen w-screen overflow-y-auto">
         <Header>Header</Header>

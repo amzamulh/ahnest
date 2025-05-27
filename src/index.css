@@ -63,13 +63,10 @@
   --text-lg: 1.125rem;
   --text-xl: 1.25rem;
   --text-xxl: 1.5rem;
-
-  --text-h1: 2.5rem;
-  --text-h2: 2rem;
-  --text-h3: 1.75rem;
-  --text-h4: 1.5rem;
-  --text-h5: 1.25rem;
-  --text-h6: 1rem;
+  --text-max: 1.75rem;
+  --text-max2: 2rem;
+  --text-max3: 2.5rem;
+  --text-max4: 3rem;
 
   /*=====  End of Font sizes  ======*/
 
